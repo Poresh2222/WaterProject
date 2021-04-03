@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:waterproject_v2/pages/root_page.dart';
 
 void main() {
   runApp(MyApp());
@@ -7,12 +8,12 @@ void main() {
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
+    return new MaterialApp(
+      title: 'WaterProject',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      //home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: new RootPage(),
     );
   }
 }
