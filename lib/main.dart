@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:waterproject_v2/pages/root_page.dart';
+import 'package:waterproject_v2/services/authentication.dart';
 
 void main() {
   runApp(MyApp());
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: new RootPage(),
+      home: new RootPage(auth: new Auth()),
     );
   }
 }
